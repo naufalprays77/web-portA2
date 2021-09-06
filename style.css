@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/*General Headingd*/
+h2 {
+  text-transform: uppercase;
+  color: black;
+  margin: 10px auto 1rem;
+  font-family: 'Besley', serif;
+  font-size: 50px;
+}
+h3 {
+  margin-top: 6rem;
+  font-size: 50px;
+  border-bottom: 3px solid black;
+  width: 70%;
+}
+h4 {
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  font-size: 80px;
+  font-weight: 500;
+  font-family: 'Besley', serif;
+  position: relative;
+  z-index: 1;
+}
+h5 {
+  margin: auto;
+  font-size: 21px;
+}
+h6 {
+  color: white;
+  font-size: 20px;
+  text-transform: capitalize;
+  text-align: center;
+}
+h7 {
+  color: #000000;
+  font-family: 'Besley', serif;
+  margin: auto;
+  text-align: center;
+}
+/*End Headings*/
+/*==============================================================*/
+/*Home*/
+header {
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  transition: 0.6s;
+}
+header.sticky {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 300px 20px;
+}
+header .brand {
+  width: 70px;
+}
+header .menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .menu a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 0 20px;
+  padding: 0 10px;
+  border-radius: 40px;
+  transition: 0.3s;
+  transition-property: color;
+  font-family: 'Viga', sans-serif;
+  text-transform: uppercase;
+}
+header .menu a:hover {
+  color: #fff;
+  background: #b28304;
+  padding: 0px 10px;
+}
+header .btn {
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+/*EndHome*/
+/*==============================================================*/
+/*Jumbotron*/
+.jumbotron {
+  background-image: url(img/background/2.jpg);
+  height: 950px;
+  background-size: cover;
+}
+.title-start {
+  color: #b28304;
+  padding-top: 20rem;
+  margin-left: 5rem;
+  font-family: 'Zen Loop', cursive;
+  font-style: italic;
+  font-size: 80px;
+}
+.title-end {
+  color: #b28304;
+  padding-top: 20rem;
+  margin-left: 15rem;
+  font-family: 'Zen Loop', cursive;
+  font-style: italic;
+  font-size: 80px;
+}
+/*End Jumbotron*/
+/*==============================================================*/
+/*History*/
+.history-bg {
+  border: 1px solid #d4d4d4;
+  float: left;
+  height: 420px;
+  width: 300px;
+  padding: 0;
+}
+.history-text {
+  text-align: justify;
+  color: black;
+}
+.flag {
+  margin-top: 2.7rem;
+  margin-right: 0.7rem;
+  float: left;
+}
+.wrap {
+  margin-top: 3rem;
+  margin-left: -45rem;
+}
+/*Zoom Map*/
+.img-zoom-container {
+  position: relative;
+}
+.img-zoom-result {
+  border: 1px solid #d4d4d4;
+  width: 650px;
+  height: 420px;
+  float: left;
+  margin-left: 1rem;
+}
+.img-zoom-lens {
+  position: absolute;
+  border: 5px solid #ff0000;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.title1 {
+  color: black;
+  font-size: 15px;
+}
+.title-info {
+  background-color: rgb(230, 230, 230);
+  color: black;
+  margin: auto;
+  padding: 20px 0px;
+  border-radius: 10px;
+  text-align: left;
+}
+.title-info .col-4 {
+  padding-right: 0;
+}
+.list dd {
+  margin-bottom: 0;
+  font-size: 15px;
+}
+/* Galery Slideshow-History */
+.slideshow-container-history {
+  position: relative;
+  margin: auto;
+}
+.slidescale {
+  width: 100%;
+  height: 250px;
+}
+/* Next-history & previous-history buttons */
+.prev-history,
+.next-history {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next-history button" to the right */
+.next-history {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev-history:hover,
+.next-history:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.card-text {
+  text-align: left;
+  margin: auto;
+}
+/*End History*/
+/*========================================*/
+/*GC*/
+.bg-con {
+  background-image: url(img/background/31.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  right: 0;
+}
+.bg-con::after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.card-awards {
+  z-index: 1;
+  margin-bottom: 100px;
+}
+.card-img-top {
+  width: 50%;
+  margin: 20px auto 0px auto;
+}
+.img-jersey {
+  width: 320px;
+  margin: 30px 12px;
+  padding: 0px;
+}
+.slider-GC {
+  height: 280px;
+  width: 205px;
+  background-size: 100%;
+  background-image: url(img/galeryChampions/logoCoppa.png);
+  margin: auto;
+  margin-top: 2rem;
+  animation: slide 20s infinite;
+  background-repeat: no-repeat;
+}
+@keyframes slide {
+  100% {
+    background-image: url(img/piala/pialaCoppa.png);
+  }
+}
+/*Individu*/
+.slider-GC2 {
+  height: 280px;
+  width: 205px;
+  background-size: 100%;
+  background-image: url(img/individual/serieA.png);
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: -3rem;
+  animation: slide2 20s infinite;
+  background-repeat: no-repeat;
+}
+@keyframes slide2 {
+  50% {
+    background-image: url(img/individual/sepatuEmas.png);
+  }
+  100% {
+    background-image: url(img/individual/ro.png);
+  }
+}
+.titlePiala {
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.card-titleGC {
+  font-size: 20px;
+  text-align: center;
+  height: 50px;
+  margin: auto;
+  margin-bottom: 2rem;
+  padding-top: 11px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+  text-shadow: 1px 1px black;
+  font-family: 'Style Script', cursive;
+}
+.bg-card {
+  margin-top: 3rem;
+  background-color: #0a0b0c;
+}
+.bg-title-gc {
+  background-color: #0b0c0d;
+  width: 40%;
+  height: 90px;
+  border-radius: 100px;
+  margin: 135px 35px 30px 35px;
+}
+.scudetto-GC {
+  width: 170px;
+  height: 180px;
+  margin: 95px 0px 50px 30px;
+  padding: 0px;
+}
+.juve-GC {
+  width: 15%;
+  height: 15%;
+  margin: 100px -80px 50px -50px;
+  padding: 0px;
+}
+p,
+.p-card {
+  color: white;
+  text-align: center;
+}
+.size-piala {
+  width: 70%;
+  height: 70%;
+  margin: auto;
+}
+/*Slideshow-GC-Center*/
+.container {
+  position: relative;
+  z-index: 1;
+}
+.mySlidesGalery {
+  display: none;
+}
+.size-galery {
+  width: 100%;
+}
+.prev-galery,
+.next-galery {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 9px;
+  margin-top: 45px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+}
+.next-galery {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  transform: rotateY(180deg);
+}
+.prev-galery {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev-galery:hover,
+.next-galery:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.column {
+  width: 13%;
+  margin: 0px auto;
+  padding: 5px;
+}
+.icongalery {
+  margin-top: 30px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+.active,
+.icongalery:hover {
+  opacity: 1;
+  box-shadow: 0 4px 8px 0 rgb(255, 255, 255), 0 6px 20px 0 rgb(252, 252, 252);
+}
+/*End GC*/
+/*=================================================================*/
+/*Trophy*/
+.hi-slide {
+  position: relative;
+  width: 800px;
+  height: 292px;
+  margin: auto;
+  padding: 0px 20px 0px 30px;
+  box-sizing: content-box;
+}
+.hi-slide .hi-next,
+.hi-slide .hi-prev {
+  position: absolute;
+  top: 50%;
+  width: 100px;
+  height: 70px;
+  margin-top: -30px;
+  border-radius: 10px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-size: 70px;
+  font-weight: bold;
+}
+.hi-slide .hi-next:hover,
+.hi-slide .hi-prev:hover {
+  opacity: 0.7;
+  background-color: #000000;
+  color: white;
+}
+.hi-slide .hi-prev {
+  left: -60px;
+}
+.hi-slide .hi-next {
+  right: -60px;
+}
+.hi-slide > ul {
+  list-style: none;
+  position: relative;
+  width: 754px;
+  height: 292px;
+  margin: 0;
+  padding: 0;
+}
+.hi-slide > ul > li {
+  overflow: hidden;
+  position: absolute;
+  z-index: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+.hi-slide > ul > li > img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+}
+.bg-trophy {
+  background-color: #f3f3f3;
+  height: 550px;
+  padding-top: 4rem;
+}
+.pos-title {
+  padding: 40px 0px 10px 0px;
+  text-align: center;
+}
+/*End Trophy*/
+/*==================================================================*/
+/*Team/Squad*/
+.size-img-team {
+  background-image: url(img/background/27.jpg);
+  background-repeat: repeat-y;
+  background-size: contain;
+  margin: 0px 30px 0px 50px;
+  position: relative;
+  z-index: 1;
+}
+.pos-title-team h2 {
+  padding: 70px 0px 0px 0px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  color: white;
+  font-size: 100px;
+}
+.bg-team {
+  background-image: url(img/background/14.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.bg-team::after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(27, 27, 27, 0));
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.bg-team-card {
+  z-index: 1;
+  position: relative;
+  height: auto;
+  width: 50%;
+  margin: auto;
+}
+.card-text-team {
+  color: black;
+  margin: -7px 0;
+  font-size: 10px;
+  font-weight: 700;
+  height: 50px;
+}
+.card-team {
+  width: 150px;
+  background-image: url(img/background/35.jpg);
+  position: relative;
+  z-index: 1;
+  border: 0;
+  margin: 30px auto;
+  transition: transform 0.2s;
+}
+.card-team:hover {
+  transform: scale(1.7);
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+.flag-player {
+  width: 20px;
+  height: auto;
+  padding: 3px;
+  box-sizing: content-box;
+}
+.gk {
+  background-color: rgb(233, 233, 3);
+  height: 75px;
+}
+.df {
+  background-color: rgb(57, 104, 243);
+  height: 75px;
+}
+.mf {
+  background-color: rgb(28, 241, 28);
+  height: 75px;
+}
+.fw {
+  background-color: rgb(165, 0, 0);
+  height: 75px;
+}
+.juve-squad {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 70px 0px 0px 730px;
+}
+/*End Team/Squad*/
+/*===================================*/
+/*Footer*/
+.list-footer {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
+  background-size: cover;
+  color: #000000;
+  height: 200px;
+  position: relative;
+  z-index: 1;
+  right: 0;
+}
+.list-footer::after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-image: url(img/footer/list.png);
+  background-repeat: repeat-x;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-top: 100px;
+}
+.text-footer {
+  padding-top: 120px;
+  position: relative;
+  z-index: 1;
+}
+#footer {
+  text-align: center;
+}
+a {
+  color: white;
+}
+a:hover {
+  color: #fce412;
+}
+.size-copyright {
+  height: 20px;
+  width: auto;
+}
+/*EndFooter*/
+/*===================================*/
+
+/*Mobile*/
+@media only screen and (max-width: 300px) {
+  .prev-history,
+  .next-history,
+  .text-history {
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
