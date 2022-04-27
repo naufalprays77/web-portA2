@@ -1,0 +1,341 @@
+body {
+  margin: 0 !important;
+  font-family: 'Dancing Script', cursive;
+}
+.container {
+  display: flex;
+  background-image: url('../assets/img/bg_Pandawalima.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.container::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgb(0, 0, 0, 0.9));
+  position: absolute;
+  bottom: 0;
+}
+.content {
+  text-align: center;
+  z-index: 2;
+  color: white;
+  width: 60%;
+  margin: auto;
+}
+.content h1 {
+  font-size: 60px;
+}
+.content p strong {
+  font-size: 30px;
+  line-height: 35px;
+}
+.content .btn_CariTahu {
+  font-size: 20px;
+  background-color: white;
+  color: black;
+  padding: 10px 30px;
+  border-radius: 50px;
+  top: 70px;
+}
+.btn_CariTahu {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  z-index: 2;
+  position: relative;
+}
+.btn_CariTahu:hover {
+  color: white;
+  background: radial-gradient(rgba(239, 207, 0), rgba(0, 0, 0));
+  /* transition: ease-out 1s; */
+}
+@media screen and (max-width: 769px) {
+  .content h1 {
+    font-size: 30px;
+  }
+  .content p strong {
+    font-size: 20px;
+    line-height: 35px;
+  }
+  .content {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 426px) {
+  .content h1 {
+    font-size: 30px;
+  }
+  .content p strong {
+    font-size: 18px;
+    line-height: 35px;
+  }
+  .content {
+    width: 90%;
+  }
+  .content .btn_CariTahu {
+    top: 40px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .content p strong {
+    font-size: 15px;
+  }
+  .content .btn_CariTahu {
+    top: 30px;
+  }
+}
+/* 5pandawa */
+
+.container1 {
+  display: flex;
+  min-height: 100vh;
+  background-color: #11c5c6;
+  margin: 0 auto;
+}
+.first {
+  flex-grow: 1;
+  background-image: url('../assets/img/03.yudistira.jpg');
+  background-position: center;
+  width: 50%;
+  transition: 1s;
+}
+.second {
+  flex-grow: 1;
+  background-image: url('../assets/img/02.bima.jpg');
+  background-position: center;
+  width: 50%;
+  transition: 1s;
+}
+.third {
+  flex-grow: 1;
+  background-image: url('../assets/img/01.arjuna.jpg');
+  background-position: center;
+  width: 50%;
+  transition: 1s;
+}
+.fourth {
+  flex-grow: 1;
+  background-image: url('../assets/img/04.nakula.jpg');
+  background-position: center;
+  width: 50%;
+  transition: 1s;
+}
+.fifth {
+  flex-grow: 1;
+  background-image: url('../assets/img/05.sadewa.jpg');
+  background-position: center;
+  width: 50%;
+  transition: 1s;
+}
+.first:hover,
+.second:hover,
+.third:hover,
+.fourth:hover,
+.fifth:hover {
+  transition: 1.5s;
+  width: 100%;
+}
+.box {
+  transform: translate3d(0, 0, 0);
+  position: relative;
+  width: 25%;
+  color: #fff;
+  overflow: hidden;
+  transition: width 0.5s ease;
+}
+.box:after {
+  background: rgba(239, 207, 0, 0.85);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  transform: translate3d(0, 0, 0);
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.box:before {
+  background: linear-gradient(to bottom, rgba(230, 1, 1, 0) 0%, black 70%);
+  z-index: 1;
+  opacity: 0;
+  transform: translate3d(0, 0, 0) translateY(50%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transform: translate3d(0, 0, 0);
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.box:hover:after {
+  opacity: 0;
+}
+.box:hover:before {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) translateY(0);
+  transition: opacity 1s ease, transform 1s ease 0.25s;
+}
+.box:hover .swipe_upContent {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.75s ease 0.5s;
+  color: white;
+  width: 60%;
+  margin: auto;
+  font-size: 20px;
+}
+.swipe_upContent {
+  transform: translate3d(0, 0, 0) translateY(25px);
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin: 0 1.618em;
+  top: 50%;
+  opacity: 0;
+}
+.swipe_upContent h1 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+.swipe_upContent .btn_CariTahu {
+  text-align: center;
+  text-decoration: none;
+  z-index: 2;
+  position: relative;
+  font-size: 15px;
+  background-color: white;
+  color: black;
+  padding: 10px 30px;
+  border-radius: 50px;
+  top: 10px;
+}
+
+@media screen and (max-width: 769px) {
+  .box:hover .swipe_upContent {
+    width: 80%;
+    font-size: 15px;
+  }
+  .swipe_upContent h1 {
+    font-size: 1.2rem;
+  }
+  .swipe_upContent .btn_CariTahu {
+    font-size: 12px;
+    padding: 5px 15px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .box:hover .swipe_upContent {
+    width: 80%;
+    font-size: 12px;
+  }
+  .swipe_upContent h1 {
+    font-size: 1.2rem;
+  }
+  .swipe_upContent .btn_CariTahu {
+    font-size: 10px;
+    padding: 5px 15px;
+  }
+}
+
+/* Content Detail */
+
+main {
+  min-height: 73.5vh;
+}
+.info h1 {
+  text-align: center;
+}
+.container3 {
+  display: flex;
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+}
+.contentDetail {
+  display: flex;
+  flex-grow: 1;
+}
+
+.contentDetail img {
+  float: right;
+  width: 15%;
+  margin-left: 20px;
+}
+.contentDetail h1 {
+  font-size: 30px;
+  margin-left: 20px;
+  color: white;
+}
+.contentDetail p {
+  text-align: justify;
+  margin: 20px;
+  color: white;
+}
+
+aside {
+  width: 25%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  background-color: lightgray;
+}
+
+ul {
+  list-style-type: none;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+  background-color: rgba(239, 207, 0, 0.85);
+}
+
+li {
+  margin: auto;
+  display: inline;
+}
+
+li a {
+  display: block;
+  color: black;
+  padding: 30px 15px;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 25px;
+  text-align: justify;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  padding: 10px 15px;
+  border-bottom: 3px solid black;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #222;
+  padding: 2rem 0;
+}
+
+footer .credit {
+  color: #eee;
+}
+
+footer p img {
+  width: 10px;
+}
