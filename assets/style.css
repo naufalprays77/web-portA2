@@ -2,6 +2,11 @@ body {
   margin: 0 !important;
   font-family: 'Dancing Script', cursive;
 }
+a {
+  text-decoration: none;
+}
+
+/* End General */
 .container {
   display: flex;
   background-image: url('../assets/img/bg_Pandawalima.jpg');
@@ -11,6 +16,7 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh;
 }
+
 .container::after {
   content: '';
   display: block;
@@ -20,6 +26,7 @@ body {
   position: absolute;
   bottom: 0;
 }
+
 .content {
   text-align: center;
   z-index: 2;
@@ -27,13 +34,16 @@ body {
   width: 60%;
   margin: auto;
 }
+
 .content h1 {
   font-size: 60px;
 }
+
 .content p strong {
   font-size: 30px;
   line-height: 35px;
 }
+
 .content .btn_CariTahu {
   font-size: 20px;
   background-color: white;
@@ -42,6 +52,7 @@ body {
   border-radius: 50px;
   top: 70px;
 }
+
 .btn_CariTahu {
   text-align: center;
   text-decoration: none;
@@ -49,11 +60,13 @@ body {
   z-index: 2;
   position: relative;
 }
+
 .btn_CariTahu:hover {
   color: white;
   background: radial-gradient(rgba(239, 207, 0), rgba(0, 0, 0));
   /* transition: ease-out 1s; */
 }
+
 @media screen and (max-width: 769px) {
   .content h1 {
     font-size: 30px;
@@ -66,6 +79,7 @@ body {
     width: 90%;
   }
 }
+
 @media screen and (max-width: 426px) {
   .content h1 {
     font-size: 30px;
@@ -79,8 +93,10 @@ body {
   }
   .content .btn_CariTahu {
     top: 40px;
+    font-size: 15px;
   }
 }
+
 @media screen and (max-width: 320px) {
   .content p strong {
     font-size: 15px;
@@ -89,14 +105,15 @@ body {
     top: 30px;
   }
 }
+
 /* 5pandawa */
 
 .container1 {
   display: flex;
   min-height: 100vh;
-  background-color: #11c5c6;
   margin: 0 auto;
 }
+
 .first {
   flex-grow: 1;
   background-image: url('../assets/img/03.yudistira.jpg');
@@ -104,6 +121,7 @@ body {
   width: 50%;
   transition: 1s;
 }
+
 .second {
   flex-grow: 1;
   background-image: url('../assets/img/02.bima.jpg');
@@ -111,6 +129,7 @@ body {
   width: 50%;
   transition: 1s;
 }
+
 .third {
   flex-grow: 1;
   background-image: url('../assets/img/01.arjuna.jpg');
@@ -118,6 +137,7 @@ body {
   width: 50%;
   transition: 1s;
 }
+
 .fourth {
   flex-grow: 1;
   background-image: url('../assets/img/04.nakula.jpg');
@@ -125,6 +145,7 @@ body {
   width: 50%;
   transition: 1s;
 }
+
 .fifth {
   flex-grow: 1;
   background-image: url('../assets/img/05.sadewa.jpg');
@@ -132,14 +153,16 @@ body {
   width: 50%;
   transition: 1s;
 }
+
 .first:hover,
 .second:hover,
 .third:hover,
 .fourth:hover,
 .fifth:hover {
-  transition: 1.5s;
+  transition: 2s;
   width: 100%;
 }
+
 .box {
   transform: translate3d(0, 0, 0);
   position: relative;
@@ -148,6 +171,7 @@ body {
   overflow: hidden;
   transition: width 0.5s ease;
 }
+
 .box:after {
   background: rgba(239, 207, 0, 0.85);
   opacity: 1;
@@ -160,6 +184,7 @@ body {
   width: 100%;
   height: 100%;
 }
+
 .box:before {
   background: linear-gradient(to bottom, rgba(230, 1, 1, 0) 0%, black 70%);
   z-index: 1;
@@ -174,14 +199,17 @@ body {
   width: 100%;
   height: 100%;
 }
+
 .box:hover:after {
   opacity: 0;
 }
+
 .box:hover:before {
   opacity: 1;
   transform: translate3d(0, 0, 0) translateY(0);
   transition: opacity 1s ease, transform 1s ease 0.25s;
 }
+
 .box:hover .swipe_upContent {
   opacity: 1;
   transform: translateY(0);
@@ -191,6 +219,7 @@ body {
   margin: auto;
   font-size: 20px;
 }
+
 .swipe_upContent {
   transform: translate3d(0, 0, 0) translateY(25px);
   position: relative;
@@ -200,12 +229,14 @@ body {
   top: 50%;
   opacity: 0;
 }
+
 .swipe_upContent h1 {
   text-transform: uppercase;
   color: white;
   font-size: 2.5rem;
   font-weight: normal;
 }
+
 .swipe_upContent .btn_CariTahu {
   text-align: center;
   text-decoration: none;
@@ -224,6 +255,9 @@ body {
     width: 80%;
     font-size: 15px;
   }
+  .swipe_upContent {
+    top: 350px;
+  }
   .swipe_upContent h1 {
     font-size: 1.2rem;
   }
@@ -234,6 +268,13 @@ body {
 }
 
 @media screen and (max-width: 426px) {
+  .first:hover,
+  .second:hover,
+  .third:hover,
+  .fourth:hover,
+  .fifth:hover {
+    width: 400%;
+  }
   .box:hover .swipe_upContent {
     width: 80%;
     font-size: 12px;
@@ -245,97 +286,385 @@ body {
     font-size: 10px;
     padding: 5px 15px;
   }
+  .swipe_upContent {
+    top: 450px;
+    background-color: rgba(17, 17, 17, 0.7);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .first,
+  .second,
+  .third,
+  .fourth,
+  .fifth {
+    margin-top: -80px;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .swipe_upContent {
+    top: 450px;
+  }
+  .first,
+  .second,
+  .third,
+  .fourth,
+  .fifth {
+    margin-top: -80px;
+  }
 }
 
 /* Content Detail */
+/* Navbar */
 
-main {
-  min-height: 73.5vh;
+
+nav {
+  position: fixed;
+  width: 100%;
+  margin: auto;
 }
-.info h1 {
+
+nav ul {
+  width:60%;
+  list-style: none;
+  background: rgb(0, 0, 0, 0);
+  overflow: hidden;
+  padding: 20px;
   text-align: center;
+  margin: 0;
+  transition: 1s;
 }
-.container3 {
+
+nav.black ul {
+ width: 100%;
+  background: black;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: 1s;
+}
+
+nav ul li {
+  padding: 5px;
+  text-decoration: none;
+ display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+}
+
+nav ul li a:hover {
+  background: #565050;
+  border-radius: 50px;
+}
+
+/* End Navbar */
+#main_container1 {
+  background: #222;
+  width: 100%;
+  padding: 85px 0px;
+}
+
+.main_content1 {
   display: flex;
+  width: 80%;
+  margin: auto;
+}
+
+.main_content1 .size-imgHead {
+  display: block;
+  margin: auto;
+  padding: 20px;
+  width: 50%;
+}
+
+.main_content1 h2 {
+  margin-left: 20px;
+  color: white;
+}
+
+.main_content1 p {
+  font-size: 20px;
+  text-align: justify;
+  margin: 20px;
+  color: white;
+  padding-bottom: 20px;
+}
+
+aside {
+  width: 26%;
+  margin-left: 20px;
+  margin-right: 20px;
+  float: right;
+  font-style: italic;
+  background: #111;
+  padding: 10px;
+}
+
+.infoDev ul {
+  padding: 0px;
+  text-align: center;
+  list-style-type: none;
+  color: white;
+  font-size: 21px;
+}
+
+.infoDev ul li img {
+  width: 80%;
+  padding-bottom: 20px;
+}
+
+.infoDev ul .medsos {
+  width: 100%;
+  padding: 25px 0px;
+}
+
+.infoDev ul .medsos li {
+  display: inline-block;
+
+}
+
+.infoDev ul .medsos li img {
+  background-color: white;
+  width: 30px;
+  padding: 5px;
+  border-radius: 50px;
+  margin: 0px 7px;
+}
+
+.infoDev ul .medsos li img:hover {
+  background-color: #565050;
+}
+
+.padd-top {
+  padding: 70px 0px;
+}
+
+.content_detailPandawa {
+  width: 100%;
+  background-color: #222;
+  /* background-image: linear-gradient(to top, rgb(129, 37, 37), rgb(197, 187, 42), rgba(0, 0, 0, 0.5)); */
+}
+
+.content_detailPandawa .card {
   width: 80%;
   padding: 20px;
   margin: 0 auto;
 }
-.contentDetail {
-  display: flex;
-  flex-grow: 1;
+
+#yudhistira,
+#arjuna,
+#sadewa {
+  background: #565050;
 }
 
-.contentDetail img {
-  float: right;
-  width: 15%;
+#yudhistira .card img,
+#arjuna .card img,
+#sadewa .card img {
+  float: left;
+  width: 12%;
+  height: 230px;
   margin-left: 20px;
-}
-.contentDetail h1 {
-  font-size: 30px;
-  margin-left: 20px;
-  color: white;
-}
-.contentDetail p {
+  margin-right: 50px;
   text-align: justify;
+  background-color: rgba(17, 17, 17, 0.7);
+  border-radius: 20px;
+  padding: 20px 20px;
+}
+
+#bima .card img,
+#nakula .card img {
+  float: right;
+  width: 12%;
+  margin-right: 20px;
+  margin-left: 50px;
+  text-align: justify;
+  height: 230px;
+  background-color: rgba(17, 17, 17, 0.7);
+  border-radius: 20px;
+  padding: 20px 20px;
+}
+
+#yudhistira .card p,
+#bima .card p,
+#arjuna .card p,
+#nakula .card p,
+#sadewa .card p {
+  text-align: justify;
+  color: white;
   margin: 20px;
+  font-size: 20px;
+}
+
+#yudhistira h2,
+#bima h2,
+#arjuna h2,
+#nakula h2,
+#sadewa h2 {
+  margin-left: 20px;
   color: white;
 }
 
-aside {
-  width: 25%;
-  padding-left: 15px;
-  margin-left: 15px;
-  float: right;
-  font-style: italic;
-  background-color: lightgray;
+@media screen and (max-width: 769px) {
+  aside {
+    width: 30%;
+    padding: 30px 10px;
+  }
+  .main_content1 .size-imgHead {
+    width: 90%;
+  }
+  .infoDev ul .medsos li img {
+    width: 20px;
+  }
+  .infoDev .medsos {
+    width: 100%;
+    padding: 25px 0px;
+  }
+  #yudhistira .card img,
+  #arjuna .card img,
+  #sadewa .card img {
+    width: 30%;
+    margin-right: 20px;
+  }
+  #bima .card img,
+  #nakula .card img {
+    width: 30%;
+    margin-left: 20px;
+  }
 }
+@media screen and (max-width: 426px) {
+  nav ul li a {
+    font-size: 18px;
+    padding: 10px 0px;
+  }
+  nav ul {
+    padding: 10px 0px;
+    margin: auto;
+  }
+  nav.black ul {
+    padding: 10px 0px;
+    margin: auto;
+  }
+  nav ul li a:hover {
+    padding: 5px 10px;
+    border-radius: 50px;
+  }
+  .main_content1 {
+    width: 90%;
+  }
+  .content_detailPandawa .card {
+    width: 90%;
+  }
 
-ul {
-  list-style-type: none;
-  margin: auto;
-  overflow: hidden;
-  text-align: center;
-  background-color: rgba(239, 207, 0, 0.85);
+  aside {
+    width: 82%;
+    padding: 30px 10px;
+  }
+  .infoDev {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .infoDev ul {
+    font-size: 20px;
+  }
+  .infoDev ul .medsos li img {
+    width: 20px;
+    margin: 7px;
+  }
+  .infoDev .medsos {
+    width: 65%;
+    padding: 15px 0px;
+    margin: auto;
+  }
+  .main_content1 .size-imgHead {
+    width: 85%;
+  }
+  #yudhistira .card img,
+  #arjuna .card img,
+  #sadewa .card img {
+    height: 150px;
+  }
+  #bima .card img,
+  #nakula .card img {
+    height: 150px;
+  }
 }
+@media screen and (max-width: 376px) {
+  nav ul li a {
+    font-size: 16px;
+    padding: 10px 0px;
+  }
 
-li {
-  margin: auto;
-  display: inline;
+  aside {
+    width: 80%;
+    padding: 30px 10px;
+  }
+  .infoDev {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .infoDev ul {
+    font-size: 18px;
+  }
+  .infoDev ul .medsos li img {
+    width: 25px;
+    margin: 6px;
+  }
+  .infoDev .medsos {
+    width: 80%;
+    margin: auto;
+  }
+  #yudhistira .card img,
+  #arjuna .card img,
+  #sadewa .card img {
+    width: 30%;
+  }
+  #bima .card img,
+  #nakula .card img {
+    width: 30%;
+  }
 }
+@media screen and (max-width: 321px) {
+  nav ul li a {
+    font-size: 13.5px;
+    padding: 10px 0px;
+  }
 
-li a {
-  display: block;
-  color: black;
-  padding: 30px 15px;
-  text-decoration: none;
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 25px;
-  text-align: justify;
+  .infoDev ul {
+    font-size: 15px;
+  }
+  .infoDev ul .medsos li img {
+    width: 20px;
+    margin: 5px;
+  }
+
+  #yudhistira .card img,
+  #arjuna .card img,
+  #sadewa .card img {
+    width: 25%;
+    height: 100px;
+  }
+  #bima .card img,
+  #nakula .card img {
+    width: 25%;
+    height: 100px;
+  }
 }
-
-li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.active {
-  padding: 10px 15px;
-  border-bottom: 3px solid black;
-  border-radius: 10px;
-}
-
-/* Footer */
+/* End Section */ /* Footer */
 footer {
   text-align: center;
-  background-color: #222;
+  background: black;
+  color: white;
   padding: 2rem 0;
 }
-
 footer .credit {
+  /* margin: 1rem 0; */
+  font-size: 1rem;
   color: #eee;
 }
-
 footer p img {
-  width: 10px;
+  width: 30px;
 }
