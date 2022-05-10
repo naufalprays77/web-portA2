@@ -316,8 +316,6 @@ a {
 
 /* Content Detail */
 /* Navbar */
-
-
 nav {
   position: fixed;
   width: 100%;
@@ -325,7 +323,6 @@ nav {
 }
 
 nav ul {
-  width:60%;
   list-style: none;
   background: rgb(0, 0, 0, 0);
   overflow: hidden;
@@ -336,7 +333,6 @@ nav ul {
 }
 
 nav.black ul {
- width: 100%;
   background: black;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   padding: 20px;
@@ -345,8 +341,8 @@ nav.black ul {
 
 nav ul li {
   padding: 5px;
+  float: left;
   text-decoration: none;
- display: inline-block;
 }
 
 nav ul li a {
@@ -360,25 +356,29 @@ nav ul li a:hover {
   background: #565050;
   border-radius: 50px;
 }
+.padd-left {
+  margin-left: 150px;
+}
 
 /* End Navbar */
-#main_container1 {
+.container_detail {
   background: #222;
   width: 100%;
-  padding: 85px 0px;
+  padding: 85px 0px 0px 0px;
 }
 
 .main_content1 {
   display: flex;
   width: 80%;
   margin: auto;
+  padding-bottom: 80px;
 }
 
 .main_content1 .size-imgHead {
   display: block;
   margin: auto;
   padding: 20px;
-  width: 50%;
+  width: 70%;
 }
 
 .main_content1 h2 {
@@ -395,8 +395,9 @@ nav ul li a:hover {
 }
 
 aside {
-  width: 26%;
-  margin-left: 20px;
+  width: 250%;
+  /* height: 20%; */
+  margin-left: 30px;
   margin-right: 20px;
   float: right;
   font-style: italic;
@@ -413,18 +414,25 @@ aside {
 }
 
 .infoDev ul li img {
-  width: 80%;
-  padding-bottom: 20px;
+  width: 50%;
+  padding-bottom: 50px;
+}
+.infoDev ul li h4,
+.infoDev ul li h5 {
+  margin: 0px;
+  line-height: 30px;
 }
 
-.infoDev ul .medsos {
+.infoDev .medsos {
   width: 100%;
   padding: 25px 0px;
+  margin: auto;
 }
 
 .infoDev ul .medsos li {
+  /* float: left; */
   display: inline-block;
-
+  margin: auto;
 }
 
 .infoDev ul .medsos li img {
@@ -509,19 +517,31 @@ aside {
 }
 
 @media screen and (max-width: 769px) {
+  .padd-left {
+    margin-left: 50px;
+  }
   aside {
-    width: 30%;
-    padding: 30px 10px;
+    width: 700%;
+    padding: 20px;
+    margin: 10px 0px 0px 0px;
   }
-  .main_content1 .size-imgHead {
-    width: 90%;
+  .infoDev ul li img {
+    width: 100%;
   }
+
   .infoDev ul .medsos li img {
     width: 20px;
   }
   .infoDev .medsos {
     width: 100%;
     padding: 25px 0px;
+  }
+  .infoDev ul li h4,
+  .infoDev ul li h5 {
+    margin: 0px;
+    line-height: 30px;
+    font-size: 20px;
+    width: 100%;
   }
   #yudhistira .card img,
   #arjuna .card img,
@@ -552,6 +572,9 @@ aside {
     padding: 5px 10px;
     border-radius: 50px;
   }
+  .padd-left {
+    margin-left: 20px;
+  }
   .main_content1 {
     width: 90%;
   }
@@ -560,7 +583,7 @@ aside {
   }
 
   aside {
-    width: 82%;
+    width: 100%;
     padding: 30px 10px;
   }
   .infoDev {
@@ -599,7 +622,7 @@ aside {
   }
 
   aside {
-    width: 80%;
+    width: 50%;
     padding: 30px 10px;
   }
   .infoDev {
@@ -631,6 +654,10 @@ aside {
   nav ul li a {
     font-size: 13.5px;
     padding: 10px 0px;
+  }
+
+  .padd-left {
+    margin-left: 10px;
   }
 
   .infoDev ul {
